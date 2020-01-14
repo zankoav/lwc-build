@@ -1,0 +1,48 @@
+{
+    "name": "lwc-build",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build-pl": "webpack --env.mode=production --env.lang=pl",
+        "build-de": "webpack --env.mode=production --env.lang=de",
+        "build-ru": "webpack --env.mode=production --env.lang=ru",
+        "watch": "webpack-dev-server --env.mode=development --open"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zankoav/lwc-build.git"
+    },
+    "keywords": [],
+    "author": "Alexandr Zanko",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.7.7",
+        "@babel/preset-env": "^7.7.7",
+        "babel-loader": "^8.0.6",
+        "css-loader": "^3.4.1",
+        "file-loader": "^5.0.2",
+        "html-webpack-plugin": "^3.2.0",
+        "style-loader": "^1.1.2",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.10.1"
+    },
+    "dependencies": {
+        "@lwc/engine": "^1.1.1",
+        "@lwc/synthetic-shadow": "^1.1.1",
+        "assets-webpack-plugin": "^3.9.10",
+        "autoprefixer": "^9.7.3",
+        "clean-webpack-plugin": "^3.0.0",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "html-loader": "^0.5.5",
+        "lwc-webpack-plugin": "^0.4.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "node-sass": "^4.13.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.3",
+        "postcss-loader": "^3.0.0",
+        "pug-html-loader": "^1.1.5",
+        "pug-loader": "^2.4.0",
+        "resolve-url-loader": "^3.1.1",
+        "sass-loader": "^8.0.1"
+    }
+}
